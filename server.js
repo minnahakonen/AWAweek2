@@ -8,12 +8,6 @@ const port = 3000;
 const hello = {
     msg: "Hello world"
 }
-const echo = [
-    {id: "dog"},
-    {id: "cat"},
-    {id: "bird"}
-
-]
 
 
 let list = []
@@ -29,7 +23,7 @@ app.get("/hello", (req, res) => {
     res.json(hello)
 } )
 app.get("/echo/:id", (req, res) => {
-    res.json(echo[req.params.id]);
+    res.json(req.params);
 } )
 app.post("/sum", (req, res) => {
     let array = req.body.numbers
