@@ -10,7 +10,7 @@ const hello = {
 }
 let input = []
 let answer2 = {
-    list: answer2
+    list: input
 }
 
 app.use(express.json());
