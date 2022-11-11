@@ -8,10 +8,10 @@ const port = 3000;
 const hello = {
     msg: "Hello world"
 }
-
-
-let list = []
-
+let input = []
+let answer2 = {
+    list: answer2
+}
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
@@ -38,9 +38,9 @@ app.post("/sum", (req, res) => {
     res.send(back)
 })
 app.post("/list", (req, res) => {
-    list.push(req.body.text);
-    res.send(list)
-    console.log(list)
+    input.push(req.body.text);
+    res.send(answer2)
+    console.log(answer2)
     
 })
 
